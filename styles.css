@@ -1,0 +1,148 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
+
+.bt-github {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 35px;
+}
+
+.bt-github:hover {
+  background: white;
+  color: black;
+  padding: 10px 35px;
+  transition: 1.0s;
+}
+
+.conhecimentos {
+  background-color: #161616;
+  color: white;
+}
+
+.bt-github i {
+    color: #CC3232;
+}
+
+.knowledge {
+  margin-bottom: 5rem !important;
+  margin-top: 5rem !important;
+}
+
+.knowledge i {
+  color: #CC3232;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.knowledge span {
+  color: #707070;
+  font-weight: 300;
+}
+
+.about-me {
+  background-color: #222222;
+  color: white;
+  font-weight: 500;
+}
+
+.title-developer {
+  color: #CC3232;
+  font-weight: 600;
+}
+.text-about-me {
+  color: #868686;
+
+}
+
+.progress-color {
+  background-color: #CC3232 !important;
+} 
+
+.contact {
+  background-color: #161616;
+  color: white;
+}
+
+.fa-github {
+  color: #CC3232;
+  font-size: 2rem;
+  margin-right: 1rem;
+
+}
+
+.fa-linkedin {
+  color: #CC3232;
+  font-size: 2rem;
+  margin-right: 1rem;
+
+}
+
+.fa-envelope {
+  color: #CC3232;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.bt-contact span{
+  color: #707070;
+  font-weight: 300;
+  margin: 0;
+}
+
+.bt-contact {
+  display: flex;
+  background-color: #161616;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  
+}
+
+.bt-contact:hover i,
+.bt-contact:hover span {
+  color: white !important;
+  transition: 0.5s;
+}
+
+.form-contact input,
+.form-contact textarea {
+  width: 100%;
+  border: 1px solid #707070;
+  color: white !important;
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+  background: none;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.btn-form {
+  background-color: #CC3232;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-form:hover {
+  background-color: #a61b1b;
+  transition: 0.5s;
+}
