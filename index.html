@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a1a1a' width='100' height='100'/><text y='70' font-size='70' fill='%23e74c3c' font-family='Arial, sans-serif' text-anchor='middle' x='50'>&lt;/&gt;</text></svg>">
+    <link rel="icon" type="image/svg+xml" id="favicon">
     <title>TheusDev - Portifólio</title>
 </head>
 <body>
@@ -297,5 +297,39 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script>
+  // Função para criar favicon a partir de Font Awesome
+  function setFontAwesomeFavicon(iconClass, color = '#e74c3c', bgColor = '#1a1a1a') {
+    const canvas = document.createElement('canvas');
+    canvas.width = 64;
+    canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+    
+  
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(0, 0, 64, 64);
+    
+
+    ctx.font = '48px "Font Awesome 6 Free"';
+    ctx.fillStyle = color;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    
+    const icons = {
+      'code': '\uf121',
+      'laptop-code': '\uf5fc',
+      'terminal': '\uf120',
+      'brackets-curly': '\uf7ea',
+      'm': '\u004d'
+    };
+    
+    ctx.fillText(icons[iconClass] || icons.code, 32, 35);
+    
+    const link = document.getElementById('favicon');
+    link.href = canvas.toDataURL('image/png');
+  }
+  setFontAwesomeFavicon('code', '#e74c3c', '#1a1a1a');
+</script>
 </body>
 </html>
