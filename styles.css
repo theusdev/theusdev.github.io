@@ -24,6 +24,7 @@ a{
   color: white;
   border-radius: 20px;
   padding: 10px 35px;
+  margin-top: .5rem;
 }
 
 .bt-github:hover {
