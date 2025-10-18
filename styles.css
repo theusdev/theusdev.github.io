@@ -41,6 +41,22 @@ a{
   color: black;
 }
 
+.video-container {
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.3),
+    0 0 30px rgba(255, 255, 255, 0.2); /* Efeito neon */
+}
+
+.video-container iframe {
+  display: block;
+  border-radius: 17px;
+}
+
 .conhecimentos {
   background-color: #161616;
   color: white;
